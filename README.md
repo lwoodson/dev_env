@@ -6,7 +6,7 @@ systems up to my liking.  This assumes a CentOS install in VirtualBox.
 Logged in as root:
 ```shell
 yum install git
-git checkout [path_to_repo] ~/.dev_env
+git clone https://github.com/lwoodson/dev_env.git ~/.dev_env
 cd ~/.dev_env
 ./as_root_1.sh
 ```
@@ -21,7 +21,7 @@ cd ~/.dev_env
 This will install the guest additions and some other common packages.  Again,
 it will reboot when finished.  This time, log in as a primary user:
 ```shell
-git checkout [path_to_repo] ~/.dev_env
+git clone https://github.com/lwoodson/dev_env.git ~/.dev_env
 cd ~/.dev_env
 ./as_user.sh
 ```
