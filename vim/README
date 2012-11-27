@@ -1,0 +1,4 @@
+TODO
+# Shortcut to execute ls_snip for current file type(s) in a new buffer.
+# Automagically detect html, rhtml, erb to include html, xhtml, eruby,
+  javascript file types.
