@@ -32,7 +32,9 @@ mkdir ~/Projects
 
 # install packages
 echo "Installing user packages"
-sudo yum install -y gvim google-chrome-stable libreoffice lynx gimp subversion 
+sudo yum install -y gvim google-chrome-stable libreoffice lynx gimp subversion \
+                    dia postgresql postgresql-server postgresql-devel \
+                    mysql mysql-server mysql-devel sqlite sqlite-devel ctags 
 
 # RVM setup
 echo "Installing RVM"
