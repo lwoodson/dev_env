@@ -36,6 +36,10 @@ sudo yum install -y gvim google-chrome-stable libreoffice lynx gimp subversion \
                     dia postgresql postgresql-server postgresql-devel \
                     mysql mysql-server mysql-devel sqlite sqlite-devel ctags 
 
+# postgres config
+service postgresql initdb
+sed -i.bak 's/^\([^#].*\)ident/\1 trust/g' /var/lib/pgsql/data/pg_hba.conf
+
 # RVM setup
 echo "Installing RVM"
 curl -L https://get.rvm.io | bash -s stable --ruby

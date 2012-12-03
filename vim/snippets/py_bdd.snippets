@@ -1,0 +1,51 @@
+# Specloud class definitions and behavioral test methods.
+snippet spec
+	class ${1:Name}Spec(unittest.TestCase):
+	    ${2:pass}
+
+snippet it
+	def it_${1:should_do_what}(self):
+	    ${2:pass}
+snippet	ensure
+	def ensure_${1:what}(self):
+	    ${2:pass}
+snippet must
+	def must_${1:do_what}(self):
+	    ${2:pass}
+snippet shouldm
+	def should_${1:do_what}(self):
+	    ${2:pass}
+snippet example
+	def example_${1:case}(self):
+	    ${2:pass}
+
+# should dsl
+snippet should
+	${1:target} |should| ${2:test}
+snippet should_not
+	${1:target} |should_not| ${2:test}
+
+# should-dsl matchers.  See
+# github.com/nsi-iff/should-dsl/blob/master/should_dsl/matchers.py
+snippet eq
+	equal_to(${1:what})${2}
+snippet be
+	be(${1:what})${2}
+snippet inc
+	include(${1:item})${2}
+snippet cnt
+	contain(${1:item})${2}
+snippet gt
+	be_greater_than(${1:other})${2}
+snippet gteq
+	be_greater_than_or_equal_to(${1:other})${2}
+snippet lt
+	be_less_than(${1:other})${2}
+snippet	lteq
+	be_less_than_or_equal_to(${1:other})${2}
+snippet exc
+	check_exception(${1:type}, ${2:callable})${3}
+	
+	
+
+	

@@ -28,9 +28,14 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 "plugins
 :filetype plugin on
 :helptags ~/.vim/doc
+
+" NerdTREE
 let g:NERDTreeChDirMode=2
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+let NERDTreeIgnore = ['\.pyc$']
+
+" Tagbar
 nmap <F8> :TagbarToggle<CR>
 
 noremap <F3> :call Svndiff("prev")<CR> 
